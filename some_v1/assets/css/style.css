@@ -1,0 +1,166 @@
+.form-signin {
+    width: 100%;
+    max-width: 380px;
+    padding: 15px;
+    margin: auto;
+    text-align: center;
+}
+
+.menu .text {
+	line-height: 25px;
+}
+
+.menu .text::selection {
+	background-color: transparent;
+}
+
+.menu .item {
+	display: block;
+	cursor: default;
+}
+
+.menu .submenu {
+	display: none;
+}
+
+.menu .item .pointer {
+	transform: rotate(-90deg);
+}
+
+.menu .item.active > .submenu {
+	display: block;
+}
+
+.menu .item.active > .content > .pointer {
+	transform: rotate(0);
+}
+
+.menu .error {
+	display: block;
+	width: 250px;
+	max-width: 90%;
+	color: #AF2424;	
+	margin: 10px;
+}
+
+.menu .item-add .content,
+.menu .item .content {
+	display: inline-flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	border: 1px solid transparent;
+	border-radius: 3px;
+}
+
+.menu .item .btn-icons {
+	display: none;
+	justify-content: center;
+	visibility: hidden;
+}
+
+.menu .item .btn-icons.active {
+	display: flex;
+}
+
+.menu .item .menu_do {
+	width: 30px;
+	height: 30px;
+	border-radius: 100%;
+	background-color: #EDEDED;
+	text-align: center;
+	cursor: pointer;
+	margin: 5px;
+	margin-left: 0;
+	box-sizing: border-box;
+	border: 1px solid #DBDADA;	
+}
+
+.menu .item .menu_do:first-child {
+	margin-left: 5px;
+}
+
+.menu .item .menu_do .icon {
+	line-height: 30px;
+	font-size: 16px;
+}
+
+.menu .item .menu_do:hover {
+	background-color: #DBDADA;
+}
+
+.menu .content:hover > .btn-icons.active {
+	visibility: visible;
+}
+
+.menu .item-add .content:hover,
+.menu .item .content:hover {
+	border-color: #43FFD1;
+	box-shadow: 0 0 0 2px #BAFFEE;
+}
+
+.menu .item-add .text,
+.menu .item-add .pointer,
+.menu .item .text,
+.menu .item .pointer {
+	padding: 0 10px;
+	color: #101010;
+}
+
+.menu .item .text:hover {
+	text-decoration: underline;
+}
+
+.menu .item-add .text {
+	line-height: 40px;
+}
+
+.menu .item-add .content {
+	cursor: pointer;
+}
+
+.menu .form-elem {
+	display: none;
+}
+
+.menu .form-elem.active {
+	display: block;
+}
+
+.indicator {
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin: 5px 10px;
+	background-color: #2BE48B;
+}
+
+.indicator.off {
+	background-color: #F04F4F;
+}
+
+.inputs {
+	width: 300px;
+	max-width: 90%;
+}
+
+.menu .item-add.off {
+	display: none;
+}
+
+.msgs {
+	display: block;
+	max-width: 200px;
+	position: fixed;
+	left: 10px;
+	bottom: 10px;
+}
+
+.msg {
+	display: block;
+	max-width: 100%;
+	padding: 10px 15px;
+	margin: 10px;
+	background-color: rgba(67, 255, 209, .8);
+}
